@@ -20,14 +20,11 @@ def send(msg):
 def sendchat(msg):
 	send("PRIVMSG " + channel + " :" + msg)		
 
-
-def process(c	if c == "!die":
-	"""
-	Extend this to suit your needs
-	"""
+def process(c):
+	if c == "!die":
 		send("PART %s : Terminated..." % (channel))
 		irc.close()
-		sys.exit(0)	
+		sys.exit(0)
 	elif c == "!time":
 		sendchat(str(time.time()))
 	elif c == "!help":
