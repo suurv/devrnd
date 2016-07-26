@@ -1,2 +1,2 @@
 # devrnd
-Random code testings
+Random code snippets in various languages
