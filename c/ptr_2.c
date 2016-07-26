@@ -7,10 +7,9 @@ int main()
 {
 	int a;
 	int *ptr;
-	int size;
-	ptr = &a;
 	a = 100;
-	printf("%d\n",++*ptr);
-	printf("%d\n",++*(++ptr));
+	ptr = &a;
+	printf("%d\n",++(*ptr));
+	printf("%d\n",(*ptr)++);
 	return 0;
 }
